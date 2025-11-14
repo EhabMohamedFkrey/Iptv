@@ -4,6 +4,7 @@ export default async function handler(req, res) {
   if (!target) {
     return res.status(400).json({ error: "Missing URL" });
   }
+  
 
   try {
     const response = await fetch(target, {
